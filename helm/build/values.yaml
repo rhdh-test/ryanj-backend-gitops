@@ -1,0 +1,15 @@
+app:
+  name: ryanj-poi-backend-app
+  namespace: ryanj
+  cluster: .apps.rosa-bcz4z.9nln.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rhdh-test/ryanj-backend
+  org: rhdh-test
+  name: ryanj-backend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: ryanj/poi-backend-app
+  tag: latest
